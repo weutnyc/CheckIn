@@ -16,15 +16,11 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         helloLable.text! += userName
     }
     
-
-    
     @IBAction func logOutButton() {
         dismiss(animated: true)
-        
     }
     
 }

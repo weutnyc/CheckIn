@@ -118,7 +118,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3aO-oe-aq3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="Hwp-Sf-284" firstAttribute="centerX" secondItem="Dv3-I7-JXT" secondAttribute="centerX" id="MRb-jx-7Uf"/>
                             <constraint firstItem="Hwp-Sf-284" firstAttribute="top" secondItem="3aO-oe-aq3" secondAttribute="top" constant="168" id="P06-5l-NLE"/>
@@ -138,9 +138,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

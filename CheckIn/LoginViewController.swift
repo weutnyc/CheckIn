@@ -12,19 +12,10 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-     let userName = "Elon Mask"
-    private let userPassword = "bugaga"
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomVC = segue.destination as? WelcomeViewController else { return }
         welcomVC.userName = userNameTF.text
         welcomVC.userPassword = passwordTF.text
-        
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -34,12 +25,12 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func ForgotUserName() {
-        showAlert(with: "Oops!", message: "Your name is \(userName)")
+        showAlert(with: "Oops!", message: "Your name is Elon Mask")
         self.userNameTF.text = ""
     }
     
     @IBAction func forgotPassword() {
-        showAlert(with: "Elon,", message: "Your password - \(userPassword)")
+        showAlert(with: "Elon,", message: "Your password - bugaga")
         self.passwordTF.text = ""
     }
     
@@ -54,7 +45,8 @@ class LoginViewController: UIViewController {
         let alert = UIAlertController(
             title: title,
             message: message,
-            preferredStyle: .alert)
+            preferredStyle: .alert
+        )
         
         let okButton = UIAlertAction(title: "OK", style: .default)
         
@@ -62,9 +54,7 @@ class LoginViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
-    }
+    
     
 }
 
