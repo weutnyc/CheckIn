@@ -15,23 +15,22 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomVC = segue.destination as? WelcomeViewController else { return }
         welcomVC.userName = userNameTF.text
-        welcomVC.userPassword = passwordTF.text
+        
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard segue.source is WelcomeViewController else { return }
         userNameTF.text = ""
         passwordTF.text = ""
     }
 
     @IBAction func ForgotUserName() {
         showAlert(with: "Oops!", message: "Your name is Elon Mask")
-        self.userNameTF.text = ""
+        userNameTF.text = ""
     }
     
     @IBAction func forgotPassword() {
         showAlert(with: "Elon,", message: "Your password - bugaga")
-        self.passwordTF.text = ""
+        passwordTF.text = ""
     }
     
     @IBAction func logInActionButton() {

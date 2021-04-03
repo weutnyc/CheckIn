@@ -112,8 +112,7 @@
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="logOutButton" destination="jfc-7t-A1g" eventType="touchUpInside" id="MAG-3j-XTV"/>
-                                    <segue destination="4BT-oq-hFb" kind="unwind" unwindAction="unwindFor:" id="uFF-II-wnX"/>
+                                    <segue destination="4BT-oq-hFb" kind="unwind" unwindAction="unwindFor:" id="C9f-BU-AUg"/>
                                 </connections>
                             </button>
                         </subviews>
