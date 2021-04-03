@@ -17,8 +17,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomVC = segue.destination as? WelcomeViewController else { return }
-        welcomVC.userName = userNameTF.text
-        
+        welcomVC.userName = userName
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -56,6 +55,13 @@ class LoginViewController: UIViewController {
         alert.addAction(okButton)
         present(alert, animated: true)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    
     
 }
 
