@@ -12,6 +12,9 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
+    private let userName = "Elon Mask"
+    private let userPassword = "bugaga"
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomVC = segue.destination as? WelcomeViewController else { return }
         welcomVC.userName = userNameTF.text
@@ -24,17 +27,17 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func ForgotUserName() {
-        showAlert(with: "Oops!", message: "Your name is Elon Mask")
+        showAlert(with: "Oops!", message: "Your name is \(userName)")
         userNameTF.text = ""
     }
     
     @IBAction func forgotPassword() {
-        showAlert(with: "Elon,", message: "Your password - bugaga")
+        showAlert(with: "Elon,", message: "Your password - \(userPassword)")
         passwordTF.text = ""
     }
     
     @IBAction func logInActionButton() {
-        if userNameTF.text != "Elon Mask" || passwordTF.text != "bugaga" {
+        if userNameTF.text != userName || passwordTF.text != userPassword {
             showAlert(with: "Error", message: "Incorrect user name or password")
         }
        
