@@ -40,7 +40,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="logInActionButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnE-jv-Wme"/>
-                                    <segue destination="jfc-7t-A1g" kind="show" id="5bZ-97-lTB"/>
+                                    <segue destination="5PW-fs-OkX" kind="show" id="VuR-AL-Me3"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="tkD-WM-2Ee">
@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="20" y="75"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Item-->
         <scene sceneID="DI9-F4-TKJ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="jfc-7t-A1g" customClass="WelcomeViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99a-wA-47I">
-                                <rect key="frame" x="143" y="623" width="104" height="48"/>
+                                <rect key="frame" x="143" y="574" width="104" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" systemColor="systemRedColor"/>
@@ -125,6 +125,7 @@
                             <constraint firstItem="99a-wA-47I" firstAttribute="centerX" secondItem="Dv3-I7-JXT" secondAttribute="centerX" id="jbf-w5-439"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="MO5-4N-0Tr"/>
                     <navigationItem key="navigationItem" id="cKu-Ye-s64"/>
                     <connections>
                         <outlet property="helloLable" destination="Hwp-Sf-284" id="BYB-7X-E8S"/>
@@ -133,7 +134,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDe-KJ-uks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4BT-oq-hFb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="802" y="75"/>
+            <point key="canvasLocation" x="1730.7692307692307" y="74.644549763033169"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Cyd-oa-iJG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5PW-fs-OkX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="sYz-Lr-As5"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aF9-04-yI5">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jfc-7t-A1g" kind="relationship" relationship="viewControllers" id="fmU-qi-bzw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xwf-ML-LeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801.53846153846155" y="74.644549763033169"/>
         </scene>
     </scenes>
     <resources>
