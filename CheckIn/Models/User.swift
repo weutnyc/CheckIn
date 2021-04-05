@@ -16,7 +16,7 @@ struct User {
     
     static func getUser() -> User {
          let user = User(
-            login: "Elon Mask",
+            login: "Elon",
             password: "bugaga",
             name: "Anton",
             age: 25,
