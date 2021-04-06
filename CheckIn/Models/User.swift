@@ -15,7 +15,7 @@ struct User {
     let hobby: String
     
     static func getUser() -> User {
-         let user = User(
+         User(
             login: "Elon",
             password: "bugaga",
             name: "Anton",
@@ -24,7 +24,7 @@ struct User {
             work: "работа",
             hobby: "хобби")
         
-        return user
+        
     }
 }
 

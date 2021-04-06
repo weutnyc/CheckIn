@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomVC = segue.destination as? WelcomeViewController else { return }
-        welcomVC.userName = user.login
+        welcomVC.user = user
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
