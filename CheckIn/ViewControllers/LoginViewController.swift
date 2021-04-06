@@ -16,10 +16,20 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomVC = segue.destination as? WelcomeViewController else { return }
-        welcomVC.user = user
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        viewControllers.forEach {
+            if let welcomVC = $0 as? WelcomeViewController {
+                welcomVC.user = user
+            } else if let navigationVC = $0 as? UINavigationController{
+                let userInfoVC = navigationVC.topViewController as! UserInfoViewController
+                userInfoVC.user = user
+                
+            }
+        }
+        
     }
-    
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         userNameTF.text = ""
         passwordTF.text = ""

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A259DA2261CBE8100123750 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A259DA1261CBE8100123750 /* UserInfoViewController.swift */; };
 		3A40BFB12613628F0027C5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40BFB02613628F0027C5DA /* AppDelegate.swift */; };
 		3A40BFB32613628F0027C5DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40BFB22613628F0027C5DA /* SceneDelegate.swift */; };
 		3A40BFB52613628F0027C5DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A40BFB42613628F0027C5DA /* LoginViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A259DA1261CBE8100123750 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		3A40BFAD2613628F0027C5DA /* CheckIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A40BFB02613628F0027C5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A40BFB22613628F0027C5DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				3A7949862614C0080033A095 /* WelcomeViewController.swift */,
 				3A40BFB42613628F0027C5DA /* LoginViewController.swift */,
+				3A259DA1261CBE8100123750 /* UserInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A40BFB52613628F0027C5DA /* LoginViewController.swift in Sources */,
+				3A259DA2261CBE8100123750 /* UserInfoViewController.swift in Sources */,
 				3A7949872614C0080033A095 /* WelcomeViewController.swift in Sources */,
 				3A40BFB12613628F0027C5DA /* AppDelegate.swift in Sources */,
 				3A443159261AECFE003D1A30 /* User.swift in Sources */,

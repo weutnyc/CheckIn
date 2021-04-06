@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="-989" y="858"/>
         </scene>
-        <!--View Controller-->
+        <!--User Info View Controller-->
         <scene sceneID="zRh-ku-5AH">
             <objects>
-                <viewController id="dVC-uf-Mc8" sceneMemberID="viewController">
+                <viewController id="dVC-uf-Mc8" customClass="UserInfoViewController" customModule="CheckIn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kVI-WH-3Al">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
