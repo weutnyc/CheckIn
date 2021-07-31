@@ -51,8 +51,14 @@ class LoginViewController: UIViewController {
             passwordTF.text = ""
         }
        
+        performSegue(withIdentifier: "firstSegue", sender: nil)
+        
     }
     
+}
+
+// MARK: - Alert Controller
+extension LoginViewController {
     private func showAlert(with title: String, message: String) {
         let alert = UIAlertController(
             title: title,
@@ -65,13 +71,25 @@ class LoginViewController: UIViewController {
         alert.addAction(okButton)
         present(alert, animated: true)
     }
-    
+}
+
+
+// MARK: - Work with keyboard
+extension LoginViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTF {
+            passwordTF.becomeFirstResponder()
+        } else {
+            logInActionButton()
+        }
+        return true
+    }
+    
     
     
 }
-
